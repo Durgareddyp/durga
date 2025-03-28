@@ -1,300 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P Durga Prasad Reddy - Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
-    />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
-      body {
-        padding: 20px;
-      }
-      .section {
-        margin-bottom: 40px;
-      }
-      .section h2 {
-        border-bottom: 2px solid #333;
-        padding-bottom: 10px;
-      }
-      .contact-info a {
-        color: #333;
-        text-decoration: none;
-      }
-      .contact-info a:hover {
-        text-decoration: underline;
-      }
-      footer {
-        text-align: center;
-        margin-top: 40px;
-      }
-
-      /* Responsive Design for Mobile Devices */
-      @media (max-width: 768px) {
         body {
-          padding: 10px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
         }
-        h1 {
-          font-size: 38px;
+        .header-section {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 2rem 1rem;
         }
-        .paper.container {
-          padding: 10px;
+        .section {
+            padding: 2rem 1rem;
         }
-        .contact-info {
-          font-size: 14px;
+        .skill-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0.5rem 0;
         }
-        .section h2 {
-          font-size: 24px;
+        .experience-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
         }
-        .section p,
-        .section ul {
-          font-size: 14px;
+        .contact-links a {
+            display: inline-block;
+            margin: 0.5rem;
         }
-        .row {
-          flex-direction: column;
-        }
-        .col-6 {
-          width: 100%;
-        }
-        .card {
-          margin-bottom: 20px;
-        }
-        footer {
-          font-size: 14px;
-        }
-      }
 
-      @media (max-width: 480px) {
-        h1 {
-          font-size: 28px;
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .header-section {
+                padding: 1.5rem 0.5rem;
+            }
+            .header-section h1 {
+                font-size: 1.8rem;
+            }
+            .section {
+                padding: 1.5rem 0.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .skill-card, .experience-card {
+                padding: 1rem;
+            }
+            .contact-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
-        .contact-info {
-          font-size: 12px;
+
+        @media (max-width: 576px) {
+            .header-section h1 {
+                font-size: 1.5rem;
+            }
+            .header-section p {
+                font-size: 0.9rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            .skill-card ul, .experience-card ul {
+                padding-left: Anyways20px;
+            }
         }
-        .section h2 {
-          font-size: 22px;
-        }
-        .section p,
-        .section ul {
-          font-size: 12px;
-        }
-        footer {
-          font-size: 12px;
-        }
-      }
     </style>
-  </head>
-  <body>
-    <div class="paper container">
-      <!-- Header Section -->
-      <header class="text-center">
-        <h1>P Durga Prasad Reddy</h1>
-        <p class="contact-info">
-          <a href="mailto:durgaprasadreddyp2002@gmail.com"
-            >durgaprasadreddyp2002@gmail.com</a
-          >
-          | <a href="tel:+919390766651">+91 9390766651</a> | Bengaluru<br />
-          <a href="https://linkedin.com/in/durgaprasadreddyp" target="_blank"
-            >LinkedIn</a
-          >
-          |
-          <a href="https://durgareddyp.github.io/durga" target="_blank"
-            >Portfolio</a
-          >
-        </p>
-      </header>
-
-      <!-- Profile Section -->
-      <section class="section">
-        <h2>Profile</h2>
-        <p>
-          Passionate about Python, I am seeking a position to apply my hands-on
-          expertise in driving innovation and delivering results. Committed to
-          continuous learning and professional development to excel in my
-          career.
-        </p>
-      </section>
-
-      <!-- Education Section -->
-      <section class="section">
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <strong>B. Tech in Computer Science and Engineering</strong><br />
-            Bharath Institute of Higher Education and Research<br />
-            Completed in 2023 | CGPA: 9.4
-          </li>
-          <br />
-          <li>
-            <strong>Intermediate MPC (10+2)</strong><br />
-            Sri Gayatri Junior College<br />
-            Completed in 2019 | CGPA: 9.73
-          </li>
-          <br />
-          <li>
-            <strong>SSC</strong><br />
-            Z P High School<br />
-            Completed in 2017 | GPA: 9.0
-          </li>
-        </ul>
-      </section>
-
-      <!-- Technical Skills Section -->
-      <section class="section">
-        <h2>Technical Skills</h2>
-        <div class="row">
-          <div class="col-6">
-            <h3>Operating Systems</h3>
-            <ul>
-              <li>ESXi 8.0</li>
-              <li>RHEL 9.0</li>
-              <li>Windows Server 2019</li>
-              <li>Ubuntu</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <h3>Storage Devices</h3>
-            <ul>
-              <li>HDD</li>
-              <li>SSD</li>
-              <li>JBOD</li>
-              <li>Storage Array</li>
-              <li>SAN</li>
-              <li>NAS</li>
-            </ul>
-          </div>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container text-center">
+            <h1>P Durga Prasad Reddy</h1>
+            <p>Python Developer | Storage Specialist</p>
+            <div class="contact-links mt-3">
+                <a href="mailto:durgaprasadreddyp2002@gmail.com" class="text-white">durgaprasadreddyp2002@gmail.com</a>
+                <a href="tel:+919390766651" class="text-white">+91 9390766651</a>
+                <a href="https://linkedin.com/in/durgaprasadreddyp" class="text-white" target="_blank">LinkedIn</a>
+                <a href="https://durgareddyp.github.io/durga" class="text-white" target="_blank">Portfolio</a>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-            <h3>Programming Languages</h3>
-            <ul>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <h3>Tools</h3>
-            <ul>
-              <li>FIO</li>
-              <li>IO Meter</li>
-              <li>TestTrack</li>
-              <li>PyCharm</li>
-              <li>Visual Studio Code</li>
-              <li>IPMI</li>
-              <li>JIRA</li>
-              <li>StorCLI</li>
-              <li>VMware vCenter</li>
-              <li>VMware vSphere</li>
-              <li>mdadm</li>
-              <li>PuTTY</li>
-              <li>WinSCP</li>
-              <li>Wireshark</li>
-              <li>Docker</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    </header>
 
-      <!-- Achievements Section -->
-      <section class="section">
-        <h2>Achievements</h2>
-        <ul>
-          <li>
-            <strong>Academic Excellence</strong> - Achieved a CGPA of 9.4 in the
-            Computer Science and Engineering program.
-          </li>
-          <br />
-          <li>
-            <strong>Project Recognition</strong> - Developed a Land Registration
-            System using Blockchain as part of the final-year B.Tech project.
-            The project was awarded 'Best Project' by the faculty for its
-            innovation and practical impact.
-          </li>
-          <br />
-          <li>
-            <strong>Coding Proficiency</strong> - Demonstrated strong
-            problem-solving and programming skills by solving 50% of problems on
-            HackerRank.
-          </li>
-        </ul>
-      </section>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Profile -->
+        <section class="section">
+            <h2 class="mb-4">Profile</h2>
+            <p>I'm a Python Developer with 2 years of experience in coding, debugging, and automation. Proficient in Linux commands, VMware, and software testing. Skilled in storage technologies and performance analysis, leveraging Python scripting to improve efficiency and streamline workflows.</p>
+        </section>
 
-      <!-- Experience Section -->
-      <section class="section">
-        <h2>Experience</h2>
-        <div class="card">
-          <div class="card-body">
-            <h3>Digitalu Technologies</h3>
-            <p><strong>Intern</strong> | 06/2024 - Present | Bengaluru</p>
-            <ul>
-              <li>
-                Manually tested storage features and prepared test bed
-                configurations.
-              </li>
-              <li>Installed and configured basic setups for test execution.</li>
-              <li>
-                Updated and installed firmware for drives and storage
-                enclosures.
-              </li>
-              <li>
-                Measured performance metrics (IOPS, Latency, Throughput) using
-                varying IO depths and block sizes.
-              </li>
-              <li>
-                Worked on storage features: Create Pools, Attach Volumes,
-                Snapshots, Clone, High Availability, ORCE, Patrol Read,
-                Consistency Check, Hot Swapping, Hot-Spares, Multi-Pathing, and
-                ORLM.
-              </li>
-              <li>
-                Validated test results, marked test cases as passed/failed, and
-                documented findings.
-              </li>
-              <li>
-                Raised and tracked bugs in JIRA, prioritizing and resolving
-                issues efficiently.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h3>Linta Technologies</h3>
-            <p>
-              <strong>Software Trainee</strong> | 06/2023 - 05/2024 | Chennai
-            </p>
-            <ul>
-              <li>
-                Actively participated in training programs to learn software
-                development methodologies, tools, and technologies.
-              </li>
-              <li>
-                Gained hands-on experience in coding, debugging, and testing
-                under the guidance of senior developers.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <!-- Core Skills -->
+        <section class="section">
+            <h2 class="mb-4">Core Skills</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 skill-card">
+                    <ul>
+                        <li>Proficient in Python programming (RegEx, OOPs, file handling)</li>
+                        <li>Debugging and troubleshooting expertise</li>
+                        <li>Linux command-line proficiency</li>
+                        <li>VMware products (ESXi, vSphere, vCenter)</li>
+                        <li>Testing models knowledge</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 skill-card">
+                    <ul>
+                        <li>Storage topologies (SAN, DAS)</li>
+                        <li>Transmission protocols (iSCSI, FC, NVMe-OF)</li>
+                        <li>RAID configuration expertise</li>
+                        <li>Storage device management</li>
+                        <li>Performance validation skills</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-      <!-- Soft Skills Section -->
-      <section class="section">
-        <h2>Soft Skills</h2>
-        <ul>
-          <li>Problem-solving and critical thinking</li>
-          <li>Effective communication and teamwork</li>
-          <li>Adaptability and eagerness to learn new technologies</li>
-          <li>Strong organizational and time management skills</li>
-          <li>Attention to detail and troubleshooting ability</li>
-          <li>Leadership and collaboration in diverse teams</li>
-          <li>Analytical thinking and decision-making</li>
-        </ul>
-      </section>
-    </div>
-    <footer>
-      <p>&copy; 2025 P Durga Prasad Reddy. All Rights Reserved.</p>
+        <!-- Technical Expertise -->
+        <section class="section">
+            <h2 class="mb-4">Technical Expertise</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 skill-card">
+                    <h5>Operating Systems</h5>
+                    <p>Linux, ESXi, RHEL, Windows</p>
+                </div>
+                <div class="col-12 col-md-4 skill-card">
+                    <h5>Programming</h5>
+                    <p>Python, JavaScript (Node.js, React.js), HTML, CSS, Pytest</p>
+                </div>
+                <div class="col-12 col-md-4 skill-card">
+                    <h5>Storage Protocols</h5>
+                    <p>SAS, SATA, SCSI, NVMe</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 skill-card">
+                    <h5>Tools</h5>
+                    <p>FIO, IO Meter, TestTrack, PyCharm, VS Code, JIRA, Docker, Git</p>
+                </div>
+                <div class="col-12 col-md-6 skill-card">
+                    <h5>Transmission Protocols</h5>
+                    <p>iSCSI, FC, NVMe-OF, TCP/IP, UDP, NFS, CIFS/SMB</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section">
+            <h2 class="mb-4">Experience</h2>
+            <div class="experience-card">
+                <h4>Software Engineer - Custologix Solutions</h4>
+                <p><strong>Project:</strong> Lenovo ThinkSystem DS6200 Storage Array</p>
+                <p>Worked on validating hardware compatibility, firmware updates, RAID configurations, and system functionality. Ensured high availability and performance optimization.</p>
+                <ul>
+                    <li>Validated drive compatibility (SAS, NL-SAS, SSDs)</li>
+                    <li>Performed firmware updates and stability testing</li>
+                    <li>Configured and tested RAID levels</li>
+                    <li>Automated test cases using Python and Pytest</li>
+                    <li>Implemented multipathing (MPIO) for redundancy</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="mb-4">Education</h2>
+            <div class="experience-card">
+                <h4>B.Tech in Computer Science and Engineering</h4>
+                <p>Bharath Institute of Higher Education and Research</p>
+                <p>Completed in 2023 | CGPA: 9.4</p>
+                <h4>Intermediate MPC (10+2)</h4>
+                <p>Sri Gayatri Junior College</p>
+                <p>Completed in 2019 | CGPA: 9.73</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>P Durga Prasad Reddy | Bengaluru</p>
+        </div>
     </footer>
-  </body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Add smooth scrolling for better mobile experience
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
